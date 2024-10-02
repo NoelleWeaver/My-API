@@ -1,52 +1,302 @@
 [
-    { "id": 1, "title": "Abbey Road", "band_id": 1, "released": 1969 },
-    { "id": 2, "title": "Led Zeppelin IV", "band_id": 2, "released": 1971 },
-    { "id": 3, "title": "The Dark Side of the Moon", "band_id": 3, "released": 1973 },
-    { "id": 4, "title": "Sticky Fingers", "band_id": 4, "released": 1971 },
-    { "id": 5, "title": "A Night at the Opera", "band_id": 5, "released": 1975 },
-    { "id": 6, "title": "Nevermind", "band_id": 6, "released": 1991 },
-    { "id": 7, "title": "Who's Next", "band_id": 7, "released": 1971 },
-    { "id": 8, "title": "Back in Black", "band_id": 8, "released": 1980 },
-    { "id": 9, "title": "Metallica (The Black Album)", "band_id": 9, "released": 1991 },
-    { "id": 10, "title": "The Joshua Tree", "band_id": 10, "released": 1987 },
-    { "id": 11, "title": "Appetite for Destruction", "band_id": 11, "released": 1987 },
-    { "id": 12, "title": "The Colour and the Shape", "band_id": 12, "released": 1997 },
-    { "id": 13, "title": "Californication", "band_id": 13, "released": 1999 },
-    { "id": 14, "title": "(What's the Story) Morning Glory?", "band_id": 14, "released": 1995 },
-    { "id": 15, "title": "Dookie", "band_id": 15, "released": 1994 },
-    { "id": 16, "title": "Hybrid Theory", "band_id": 16, "released": 2000 },
-    { "id": 17, "title": "L.A. Woman", "band_id": 17, "released": 1971 },
-    { "id": 18, "title": "London Calling", "band_id": 18, "released": 1979 },
-    { "id": 19, "title": "Ten", "band_id": 19, "released": 1991 },
-    { "id": 20, "title": "Siamese Dream", "band_id": 20, "released": 1993 },
-    { "id": 21, "title": "A Hard Day's Night", "band_id": 1, "released": 1964 },
-    { "id": 22, "title": "Physical Graffiti", "band_id": 2, "released": 1975 },
-    { "id": 23, "title": "Wish You Were Here", "band_id": 3, "released": 1975 },
-    { "id": 24, "title": "Exile on Main St.", "band_id": 4, "released": 1972 },
-    { "id": 25, "title": "Hot Space", "band_id": 5, "released": 1982 },
-    { "id": 26, "title": "In Utero", "band_id": 6, "released": 1993 },
-    { "id": 27, "title": "The Wall", "band_id": 3, "released": 1979 },
-    { "id": 28, "title": "Face Value", "band_id": 7, "released": 1981 },
-    { "id": 29, "title": "Highway to Hell", "band_id": 8, "released": 1979 },
-    { "id": 30, "title": "Load", "band_id": 9, "released": 1996 },
-    { "id": 31, "title": "All That You Can't Leave Behind", "band_id": 10, "released": 2000 },
-    { "id": 32, "title": "Use Your Illusion I", "band_id": 11, "released": 1991 },
-    { "id": 33, "title": "Wasting Light", "band_id": 12, "released": 2011 },
-    { "id": 34, "title": "Blood Sugar Sex Magik", "band_id": 13, "released": 1991 },
-    { "id": 35, "title": "Standing on the Shoulder of Giants", "band_id": 14, "released": 2000 },
-    { "id": 36, "title": "American Idiot", "band_id": 15, "released": 2004 },
-    { "id": 37, "title": "Meteora", "band_id": 16, "released": 2003 },
-    { "id": 38, "title": "Greatest Hits", "band_id": 17, "released": 2000 },
-    { "id": 39, "title": "Sandinista!", "band_id": 18, "released": 1980 },
-    { "id": 40, "title": "Vs.", "band_id": 19, "released": 1993 },
-    { "id": 41, "title": "Machina/The Machines of God", "band_id": 20, "released": 2000 },
-    { "id": 42, "title": "Born to Run", "band_id": 21, "released": 1975 },
-    { "id": 43, "title": "Slippery When Wet", "band_id": 22, "released": 1986 },
-    { "id": 44, "title": "Hot Fuss", "band_id": 23, "released": 2004 },
-    { "id": 45, "title": "Enema of the State", "band_id": 24, "released": 1999 },
-    { "id": 46, "title": "Superunknown", "band_id": 25, "released": 1994 },
-    { "id": 47, "title": "Riot!", "band_id": 26, "released": 2007 },
-    { "id": 48, "title": "Three Cheers for Sweet Revenge", "band_id": 27, "released": 2004 },
-    { "id": 49, "title": "From Under the Cork Tree", "band_id": 28, "released": 2005 },
-    { "id": 50, "title": "Dark Side of the Moon", "band_id": 3, "released": 1973 }
+    { 
+        "id": 1,
+        "title": "Abbey Road", 
+        "band_id": 1, 
+        "released": 1969 
+    },
+    {
+        "id": 2, 
+        "title": "Led Zeppelin IV", 
+        "band_id": 2, 
+        "released": 1971 
+    },
+    {
+        "id": 3, 
+        "title": "The Dark Side of the Moon", 
+        "band_id": 3, 
+        "released": 1973 
+    },
+    {
+        "id": 4, 
+        "title": "Sticky Fingers", 
+        "band_id": 4, 
+        "released": 1971 
+    },
+    {
+        "id": 5, 
+        "title": "A Night at the Opera",
+        "band_id": 5, 
+        "released": 1975 
+    },
+    {
+        "id": 6, 
+        "title": "Nevermind", 
+        "band_id": 6, 
+        "released": 1991 
+    },
+    {
+        "id": 7, 
+        "title": "Who's Next", 
+        "band_id": 7, 
+        "released": 1971 
+    },
+    {
+        "id": 8, 
+        "title": "Back in Black", 
+        "band_id": 8, 
+        "released": 1980 
+    },
+    {
+        "id": 9, 
+        "title": "Metallica (The Black Album)", 
+        "band_id": 9, 
+        "released": 1991 
+    },
+    {
+        "id": 10, 
+        "title": "The Joshua Tree", 
+        "band_id": 10, 
+        "released": 1987 
+    },
+    {
+        "id": 11, 
+        "title": "Appetite for Destruction", 
+        "band_id": 11, 
+        "released": 1987 
+    },
+    {
+        "id": 12, 
+        "title": "The Colour and the Shape", 
+        "band_id": 12, 
+        "released": 1997 
+    },
+    {
+        "id": 13, 
+        "title": "Californication", 
+        "band_id": 13, 
+        "released": 1999 
+    },
+    {
+        "id": 14, 
+        "title": "(What's the Story) Morning Glory?", 
+        "band_id": 14, 
+        "released": 1995 
+    },
+    {
+        "id": 15, 
+        "title": "Dookie", 
+        "band_id": 15, 
+        "released": 1994 
+    },
+    {
+        "id": 16, 
+        "title": "Hybrid Theory", 
+        "band_id": 16, 
+        "released": 2000 
+    },
+    {
+        "id": 17, 
+        "title": "L.A. Woman",
+        "band_id": 17, 
+        "released": 1971 
+    },
+    {
+        "id": 18, 
+        "title": "London Calling", 
+        "band_id": 18, 
+        "released": 1979 
+    },
+    {
+        "id": 19, 
+        "title": "Ten", 
+        "band_id": 19, 
+        "released": 1991 
+    },
+    {
+        "id": 20, 
+        "title": "Siamese Dream", 
+        "band_id": 20, 
+        "released": 1993 
+    },
+    {
+        "id": 21, 
+        "title": "A Hard Day's Night", 
+        "band_id": 1, 
+        "released": 1964 
+    },
+    {
+        "id": 22, 
+        "title": "Physical Graffiti", 
+        "band_id": 2, 
+        "released": 1975 
+    },
+    {
+        "id": 23, 
+        "title": "Wish You Were Here", 
+        "band_id": 3, 
+        "released": 1975 
+    },
+    {
+        "id": 24, 
+        "title": "Exile on Main St.", 
+        "band_id": 4, 
+        "released": 1972 
+    },
+    {
+        "id": 25, 
+        "title": "Hot Space", 
+        "band_id": 5, 
+        "released": 1982 
+    },
+    {
+        "id": 26, 
+        "title": "In Utero", 
+        "band_id": 6, 
+        "released": 1993 
+    },
+    {
+        "id": 27, 
+        "title": "The Wall", 
+        "band_id": 3, 
+        "released": 1979 
+    },
+    {
+        "id": 28, 
+        "title": "Face Value", 
+        "band_id": 7, 
+        "released": 1981 
+    },
+    {
+        "id": 29, 
+        "title": "Highway to Hell", 
+        "band_id": 8, 
+        "released": 1979 
+    },
+    {
+        "id": 30, 
+        "title": "Load", 
+        "band_id": 9, 
+        "released": 1996 
+    },
+    {
+        "id": 31, 
+        "title": "All That You Can't Leave Behind", 
+        "band_id": 10,
+        "released": 2000 
+    },
+    {
+        "id": 32, 
+        "title": "Use Your Illusion I", 
+        "band_id": 11, 
+        "released": 1991 
+    },
+    {
+        "id": 33, 
+        "title": "Wasting Light", 
+        "band_id": 12, 
+        "released": 2011 
+    },
+    {
+        "id": 34, 
+        "title": "Blood Sugar Sex Magik", 
+        "band_id": 13,
+        "released": 1991 
+    },
+    {
+        "id": 35, 
+        "title": "Standing on the Shoulder of Giants", 
+        "band_id": 14, 
+        "released": 2000 
+    },
+    {
+        "id": 36, 
+        "title": "American Idiot", 
+        "band_id": 15, 
+        "released": 2004 
+    },
+    {
+        "id": 37, 
+        "title": "Meteora", 
+        "band_id": 16, 
+        "released": 2003 
+    },
+    {
+        "id": 38, 
+        "title": "Greatest Hits", 
+        "band_id": 17, 
+        "released": 2000 
+    },
+    {
+        "id": 39, 
+        "title": "Sandinista!", 
+        "band_id": 18, 
+        "released": 1980 
+    },
+    {
+        "id": 40, 
+        "title": "Vs.", 
+        "band_id": 19, 
+        "released": 1993 
+    },
+    {
+        "id": 41, 
+        "title": "Machina/The Machines of God", 
+        "band_id": 20, 
+        "released": 2000 
+    },
+    {
+        "id": 42, 
+        "title": "Born to Run", 
+        "band_id": 21,
+        "released": 1975 
+    },
+    {
+        "id": 43, 
+        "title": "Slippery When Wet", 
+        "band_id": 22, 
+        "released": 1986 
+    },
+    {
+        "id": 44, 
+        "title": "Hot Fuss", 
+        "band_id": 23, 
+        "released": 2004 
+    },
+    {
+        "id": 45, 
+        "title": "Enema of the State", 
+        "band_id": 24, 
+        "released": 1999 
+    },
+    {
+        "id": 46, 
+        "title": "Superunknown", 
+        "band_id": 25, 
+        "released": 1994 
+    },
+    {
+        "id": 47, 
+        "title": "Riot!", 
+        "band_id": 26, 
+        "released": 2007 
+    },
+    {
+        "id": 48, 
+        "title": "Three Cheers for Sweet Revenge", 
+        "band_id": 27, 
+        "released": 2004 
+    },
+    {
+        "id": 49, 
+        "title": "From Under the Cork Tree", 
+        "band_id": 28, 
+        "released": 2005 
+    },
+    {
+        "id": 50, 
+        "title": "Dark Side of the Moon", 
+        "band_id": 3, 
+        "released": 1973 
+    }
 ]

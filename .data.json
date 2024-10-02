@@ -248,5 +248,10 @@
         "id": 50,
         "name": "Nickelback",
         "formed": 1995
+    },
+    {
+        "id": 51,
+        "name": "Pink Floyd",
+        "formed": "1965"
     }
 ]
