@@ -16,7 +16,7 @@ const password = "admin";
 
 
 app.get('/', (req, res) => {
-    res.send('<h1>Welcome to Bands and their Albums API</h1>');
+    res.render('/admin');
 });
 
 app.get('/api/band', (req,res) =>{
@@ -66,91 +66,91 @@ app.get('/api/bands/add/:name/:formed/:pass', (req,res) =>{
 
     const newBand = { id: bands.length + 1, name, formed}
     bands.push(newBand)
-    fs.writeFileSync('.data.json', JSON.stringify(bands, null, 4))
+    fs.writeFileSync('data.json', JSON.stringify(bands, null, 4))
 
     res.status(200).json(newBand)
 })
 
-app.get('/api/songs/add/:title/:game_id/:song_level/:token', (req, res) => {
-    const { title, game_id, song_level, token } = req.params;
+app.get('/api/albums/add/:title/:band_id/:released/:pass', (req, res) => {
+    const { title, band_id, released, pass } = req.params;
 
-    if (token !== ADMIN_TOKEN) {
-        return res.status(403).json({ message: 'Unauthorized' });
+    if (pass !== password) {
+        return res.redirect('/')
     }
 
-    const newSong = { id: songs.length + 1, title, game_id: parseInt(game_id), song_level: parseInt(song_level) };
-    songs.push(newSong);
-    fs.writeFileSync('./songs.json', JSON.stringify(songs, null, 4));
+    const newAlbum = { id: albums.length + 1, title, band_id: parseInt(band_id), released: parseInt(released) };
+    albums.push(newAlbum);
+    fs.writeFileSync('data2.json', JSON.stringify(albums, null, 4));
 
-    res.status(201).json(newSong);
+    res.status(201).json(newAlbum);
 });
 
 
-app.get('/api/rhythmgames/:id/delete/:token', (req, res) => {
-    const { id, token } = req.params;
+app.get('/api/bands/:id/delete/:pass', (req, res) => {
+    const { id, pass } = req.params;
 
-    if (token !== ADMIN_TOKEN) {
-        return res.status(403).json({ message: 'Unauthorized' });
+    if (pass !== password) {
+        return res.redirect('/')
     }
 
-    rhythmGames = rhythmGames.filter(game => game.id !== Number(id));
-    fs.writeFileSync('./rhythmgames.json', JSON.stringify(rhythmGames, null, 4));
+    bands = bands.filter(game => game.id !== Number(id));
+    fs.writeFileSync('/bands.json', JSON.stringify(bands, null, 4));
 
-    res.status(204).send('Deleted successfully');
+    res.status(204).send('Deleted');
 });
 
 
-app.get('/api/songs/:id/delete/:token', (req, res) => {
-    const { id, token } = req.params;
+app.get('/api/albums/:id/delete/:pass', (req, res) => {
+    const { id, pass } = req.params;
 
-    if (token !== ADMIN_TOKEN) {
-        return res.status(403).json({ message: 'Unauthorized' });
+    if (pass !== password) {
+        return res.redirect('/')
     }
 
-    songs = songs.filter(song => song.id !== Number(id));
-    fs.writeFileSync('./songs.json', JSON.stringify(songs, null, 4));
+    albums = albums.filter(album => album.id !== Number(id));
+    fs.writeFileSync('/data2.json', JSON.stringify(albums, null, 4));
 
-    res.status(204).send('Deleted successfully');
+    res.status(204).send('Deleted');
 });
 
 
-app.get('/api/rhythmgames/:id/update/:name/:company/:token', (req, res) => {
-    const { id, name, company, token } = req.params;
+app.get('/api/bands/:id/update/:name/:formed/:pass', (req, res) => {
+    const { id, name, formed, pass } = req.params;
 
-    if (token !== ADMIN_TOKEN) {
-        return res.status(403).json({ message: 'Unauthorized' });
+    if (pass !== password) {
+        return res.redirect('/')
     }
 
-    const gameIndex = rhythmGames.findIndex(game => game.id === Number(id));
+    const bandIndex = bands.findIndex(band => band.id === Number(id));
 
-    if (gameIndex === -1) {
-        return res.status(404).json({ message: 'Rhythm game not found' });
+    if (bandIndex === -1) {
+        return res.status(404).json({ message: 'Band not found' });
     }
 
-    rhythmGames[gameIndex] = { id: Number(id), name, company };
-    fs.writeFileSync('./rhythmgames.json', JSON.stringify(rhythmGames, null, 4));
+    bands[bandIndex] = { id: Number(id), name, formed };
+    fs.writeFileSync('/data.json', JSON.stringify(bands, null, 4));
 
-    res.json(rhythmGames[gameIndex]);
+    res.json(bands[bandIndex]);
 });
 
 
-app.get('/api/songs/:id/update/:title/:game_id/:song_level/:token', (req, res) => {
-    const { id, title, game_id, song_level, token } = req.params;
+app.get('/api/albums/:id/update/:title/:band_id/:released/:pass', (req, res) => {
+    const { id, title, band_id, released, pass } = req.params;
 
-    if (token !== ADMIN_TOKEN) {
-        return res.status(403).json({ message: 'Unauthorized' });
+    if (pass !== password) {
+        return res.redirect('/')
     }
 
-    const songIndex = songs.findIndex(song => song.id === Number(id));
+    const albumIndex = albums.findIndex(album => album.id === Number(id));
 
-    if (songIndex === -1) {
-        return res.status(404).json({ message: 'Song not found' });
+    if (albumIndex === -1) {
+        return res.status(404).json({ message: 'Album not found' });
     }
 
-    songs[songIndex] = { id: Number(id), title, game_id: parseInt(game_id), song_level: parseInt(song_level) };
-    fs.writeFileSync('./songs.json', JSON.stringify(songs, null, 4));
+    albums[albumIndex] = { id: Number(id), title, band_id: parseInt(band_id), released: parseInt(released) };
+    fs.writeFileSync('/data2.json', JSON.stringify(albums, null, 4));
 
-    res.json(songs[songIndex]);
+    res.json(albums[albumIndex]);
 });
 
 app.listen(5000, () => {
