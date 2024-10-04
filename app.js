@@ -16,10 +16,10 @@ const password = "admin";
 
 
 app.get('/', (req, res) => {
-    res.render('/admin');
+    res.send('Rock API');
 });
 
-app.get('/api/band', (req,res) =>{
+app.get('/api/bands', (req,res) =>{
     const newBands = bands.map(band =>{
         const {id, name, formed} = band
         return {id, name, formed}

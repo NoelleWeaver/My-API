@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="big_h1">Rock API Documentation</h1>
+    <p>This API allows you to manage bands and their albums, providing functionality for creating, retrieving, updating, and deleting records.</p>
+
+    <h1>Get All Bands</h1>
+        <p>http://localhost:5000/api/bands</p>
+        
+        <p>Retrieves a list of all bands in the database. Each band is represented by its ID, name, and the year it was formed.</p>
+
+    <h1>Get Band by ID</h1>
+    <p>http://localhost:5000/api/bands/:bandID</p>
+    
+    <p>Fetches detailed information about a specific band by its ID. bandID is the id of the band you want. If the band your trying to find isnt there it will give you an error message.</p>
+
+    <h1>Get All Albums</h1>
+    <p>http://localhost:5000/api/albums</p>
+
+    <p>Retrieves a list of all albums in the database. Each album is represented by its ID, title, associated band ID, and release year.
+        
+    <h1>Get Album by ID</h1>
+    <p>http://localhost:5000/api/albums/:albumID</p>
+    
+    <p>Fetches detailed information about a specific album by its ID. albumID is the id of the album you want. If the album your trying to find isnt there it will give you an error message</p>
+
+    <h1 class="big_h1">ADMIN</h1>
+
+    <h1>Add a New Band</h1>
+    <p>http://localhost:5000/api/bands/add/:name/:formed/:pass</p>
+    
+    <p>Creates a new band entry in the database. This requires authentication via a password.</p>
+        
+    <h1>Add a New Album</h1>
+    <p>http://localhost:5000/api/albums/add/:title/:band_id/:released/:pass</p>
+
+    <p>Creates a new album entry in the database, associating it with a specific band.</p>
+
+    <h1>Delete a Band</h1>
+    <p>http://localhost:5000/api/bands/:id/delete/:pass</p>
+
+    <p>Deletes a band from the database using its ID. This action requires authentication via a password.</p>
+
+    <h1>Delete an Album</h1>
+    <p>http://localhost:5000/api/albums/:id/delete/:pass</p>
+
+    <p>Deletes an album from the database using its ID. This action requires authentication via a password.</p>
+
+    <h1>Update a Band</h1>
+    <p>http://localhost:5000/api/bands/:id/update/:name/:formed/:pass</p>
+
+    <p>Updates an existing band’s details using its ID.</p>
+
+    <h1>Update an Album</h1>
+    <p>http://localhost:5000/api/albums/:id/update/:title/:band_id/:released/:pass</p>
+
+    <p>Updates an existing album’s details using its ID.</p>
+</body>
+</html>
