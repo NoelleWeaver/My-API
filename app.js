@@ -8,6 +8,7 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname)));
 
 
+
 let bands = require('./data.json');
 let albums = require('./data2.json');
 

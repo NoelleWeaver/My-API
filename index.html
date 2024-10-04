@@ -4,62 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <h1 class="big_h1">Rock API Documentation</h1>
     <p>This API allows you to manage bands and their albums, providing functionality for creating, retrieving, updating, and deleting records.</p>
 
-    <h1>Get All Bands</h1>
-        <p>http://localhost:5000/api/bands</p>
+    <div data-aos="fade-down"><h1>Get All Bands</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/bands</p></div>
         
-        <p>Retrieves a list of all bands in the database. Each band is represented by its ID, name, and the year it was formed.</p>
+    <div data-aos="zoom-in"><p>Retrieves a list of all bands in the database. Each band is represented by its ID, name, and the year it was formed.</p></div>
 
-    <h1>Get Band by ID</h1>
-    <p>http://localhost:5000/api/bands/:bandID</p>
+        <div data-aos="fade-down"><h1>Get Band by ID</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/bands/:bandID</p></div>
     
-    <p>Fetches detailed information about a specific band by its ID. bandID is the id of the band you want. If the band your trying to find isnt there it will give you an error message.</p>
+    <div data-aos="zoom-in"><p>Fetches detailed information about a specific band by its ID. bandID is the id of the band you want. If the band your trying to find isnt there it will give you an error message.</p></div>
 
-    <h1>Get All Albums</h1>
-    <p>http://localhost:5000/api/albums</p>
+    <div data-aos="fade-down"><h1>Get All Albums</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/albums</p></div>
 
-    <p>Retrieves a list of all albums in the database. Each album is represented by its ID, title, associated band ID, and release year.
+    <div data-aos="zoom-in"><p>Retrieves a list of all albums in the database. Each album is represented by its ID, title, associated band ID, and release year.</div>
         
-    <h1>Get Album by ID</h1>
-    <p>http://localhost:5000/api/albums/:albumID</p>
+        <div data-aos="fade-down"><h1>Get Album by ID</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/albums/:albumID</p></div>
     
-    <p>Fetches detailed information about a specific album by its ID. albumID is the id of the album you want. If the album your trying to find isnt there it will give you an error message</p>
+    <div data-aos="zoom-in"><p>Fetches detailed information about a specific album by its ID. albumID is the id of the album you want. If the album your trying to find isnt there it will give you an error message</p></div>
 
     <h1 class="big_h1">ADMIN</h1>
 
-    <h1>Add a New Band</h1>
-    <p>http://localhost:5000/api/bands/add/:name/:formed/:pass</p>
+    <div data-aos="fade-down"><h1>Add a New Band</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/bands/add/:name/:formed/:pass</p></div>
     
-    <p>Creates a new band entry in the database. This requires authentication via a password.</p>
+    <div data-aos="zoom-in"><p>Creates a new band entry in the database. This requires authentication via a password.</p></div>
         
-    <h1>Add a New Album</h1>
-    <p>http://localhost:5000/api/albums/add/:title/:band_id/:released/:pass</p>
+    <div data-aos="fade-down"><h1>Add a New Album</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/albums/add/:title/:band_id/:released/:pass</p></div>
 
-    <p>Creates a new album entry in the database, associating it with a specific band.</p>
+    <div data-aos="zoom-in"><p>Creates a new album entry in the database, associating it with a specific band.</p></div>
 
-    <h1>Delete a Band</h1>
-    <p>http://localhost:5000/api/bands/:id/delete/:pass</p>
+    <div data-aos="fade-down"><h1>Delete a Band</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/bands/:id/delete/:pass</p></div>
 
-    <p>Deletes a band from the database using its ID. This action requires authentication via a password.</p>
+    <div data-aos="zoom-in"><p>Deletes a band from the database using its ID. This action requires authentication via a password.</p></div>
 
-    <h1>Delete an Album</h1>
-    <p>http://localhost:5000/api/albums/:id/delete/:pass</p>
+    <div data-aos="fade-down"><h1>Delete an Album</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/albums/:id/delete/:pass</p></div>
 
-    <p>Deletes an album from the database using its ID. This action requires authentication via a password.</p>
+    <div data-aos="zoom-in"><p>Deletes an album from the database using its ID. This action requires authentication via a password.</p></div>
 
-    <h1>Update a Band</h1>
-    <p>http://localhost:5000/api/bands/:id/update/:name/:formed/:pass</p>
+    <div data-aos="fade-down"><h1>Update a Band</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/bands/:id/update/:name/:formed/:pass</p></div>
 
-    <p>Updates an existing band’s details using its ID.</p>
+    <div data-aos="zoom-in"><p>Updates an existing band’s details using its ID.</p></div>
 
-    <h1>Update an Album</h1>
-    <p>http://localhost:5000/api/albums/:id/update/:title/:band_id/:released/:pass</p>
+    <div data-aos="fade-down"><h1>Update an Album</h1></div>
+    <div data-aos="flip-up"><p class="urls">http://localhost:5000/api/albums/:id/update/:title/:band_id/:released/:pass</p></div>
 
-    <p>Updates an existing album’s details using its ID.</p>
+    <div data-aos="zoom-in"><p>Updates an existing album’s details using its ID.</p></div>
+
+    <div class="footer"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
